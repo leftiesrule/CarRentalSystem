@@ -17,5 +17,7 @@ public class App {
         //I have to change the code using different functions.
         //Let's check this comment after pushing into the master file
         //What I'm doing is: just trying again and again.
+        //Messing with the daughter branch was a shit. (Of course I'm not pro at it. still working on my weaknesses.
+        //But, for now, just remain stick to the changes in master branch only
     }
 }
