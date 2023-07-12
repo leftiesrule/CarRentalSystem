@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 public class App {
     
@@ -13,5 +14,7 @@ public class App {
         System.out.print("Enter Your Password: ");
         String password = scanner.next();
         System.out.println(password);
+        //I have to change the code using different functions.
+        //Let's check this comment after pushing into the master file
     }
 }
