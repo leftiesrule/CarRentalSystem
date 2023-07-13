@@ -20,6 +20,8 @@ public class App {
     }
 
     public static void main(String[] args) {
+        // Creating a Reservation object just to check the correct introduction of the reservation class in App.java
+        Reservation reservation = new Reservation(123, 456, "2023-07-13 10:00", "2023-07-14 10:00", 1233.44);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to IS Car Rental System!");
 
