@@ -12,7 +12,24 @@ public class App {
             int currentYear = currentDate.getYear() + 1900; // Add 1900 to get the actual year
             int currentMonth = currentDate.getMonth() + 1; // Month starts from 0, so add 1
             int currentDay = currentDate.getDate();
-            int currentHours = currentDate.getHours();
+            int currentHours = currentDate.getHours(); //24 hour Format will be used
+
+           /* System.out.println("Year: " + currentYear);
+            System.out.println("Month: " + currentMonth);
+            System.out.println("Day: " + currentDay);
+            System.out.println("Hours: " + currentHours);*/
+
+            System.out.println("Current Time will be used as the starting time!");
+            System.out.println("Tell me Ending Month: ");
+            Scanner scanner = new Scanner(System.in);
+            int endMonth = scanner.nextInt();
+            System.out.println("Tell me Ending Day (of " + endMonth + "): ");
+            int endDay = scanner.nextInt();
+            System.out.println("Tell me Ending Hour (of " + endDay + ": ");
+            int endHours = scanner.nextInt();
+
+
+
 
 
         } else if (choice == 2) {
@@ -33,7 +50,6 @@ public class App {
 
         System.out.print("Please enter your choice of reservation: 1 for Walk-in Rental OR 2 for Future Reservation: ");
         int choice = scanner.nextInt();
-
-
+        NewRegistration(choice);
     }
 }
