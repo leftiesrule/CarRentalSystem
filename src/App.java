@@ -25,6 +25,22 @@ public class App {
         }
     }
 
+    public static void RecordRecievingStatus(Reservation Res){
+        // This function will record the recieving status of the car
+        // It will take the reservation object as input and will update the status of the car
+        // It will also update the status of the reservation
+        // It will also update the status of the customer
+        // It will also update the status of the car group
+        // It will also update the status of the branch
+        // It will also update the status of the branch group
+        // It will also update the status
+
+        System.out.println("Record Recieving Status Entered");
+
+        
+
+    }
+
     public static void main(String[] args) {
         // Creating a Reservation object just to check the correct introduction of the reservation class in App.java
         Reservation reservation = new Reservation(123, 456, "2023-07-13 10:00", "2023-07-14 10:00", 1233.44);
