@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Customer {
 
     private String customer_name;
+
+    private int customer_age;
     private int customer_id;
     private String customer_email;
     private String credit_card_number;
@@ -13,6 +15,7 @@ public class Customer {
 
     public Customer() {
         this.customer_name = "  ";
+        this.customer_age = 0;
         this.customer_id = 0;
         this.customer_email = "  ";
         this.license_number = "  ";
@@ -20,8 +23,9 @@ public class Customer {
         this.customer_reservation_status = false;
     }
 
-    public Customer(String customer_name, int customer_id, String customer_email, String credit_card_number, String license_number, boolean customer_status, boolean customer_reservation_status) {
+    public Customer(String customer_name, int customer_age , int customer_id, String customer_email, String credit_card_number, String license_number, boolean customer_status, boolean customer_reservation_status) {
         this.customer_name = customer_name;
+        this.customer_age = customer_age;
         this.customer_id = customer_id;
         this.customer_email = customer_email;
         this.credit_card_number = credit_card_number;
@@ -37,6 +41,15 @@ public class Customer {
     public void setCustomer_name() {
         this.customer_name = customer_name;
     }
+
+    public int getCustomer_age() {
+        return customer_age;
+    }
+
+    public void setCustomer_age(int customer_age) {
+        this.customer_age = customer_age;
+    }
+
     public int getCustomer_id() {
         return customer_id;
     }
