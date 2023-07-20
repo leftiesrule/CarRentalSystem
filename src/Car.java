@@ -44,6 +44,4 @@ public class Car {
     public void setServiceDate(String serviceDate) {
         this.serviceDate = serviceDate;
     }
-
-    
 }
