@@ -29,9 +29,7 @@ public class App {
             System.out.println("Tell me Ending Hour (of " + endDay + ": ");
             int endHours = scanner.nextInt();
 
-            System.out.println("Which Car Group would you like to choose? \nA: Audi, Tesla, BMW\nB: Civic, Vigo 4x4, Aqua Hybrid\nC: Cultus, Mehran, Alto");
-            String carGroupName = scanner.nextLine();
-            System.out.println("Which car will like to choose?");
+            System.out.println("Which car will like to choose? \nA: Audi\nB: Civic\nC: Cultus");
             String carName = scanner.nextLine();
 
             //Time Check Function (Check according to the car group whether it's feasible for that car or not)
@@ -62,9 +60,7 @@ public class App {
             System.out.println("Tell me Ending Hour (of " + endDay + ": ");
             int endHours = scanner.nextInt();
 
-            System.out.println("Which Car Group would you like to choose? \nA: Audi, Tesla, BMW\nB: Civic, Vigo 4x4, Aqua Hybrid\nC: Cultus, Mehran, Alto");
-            String carGroupName = scanner.nextLine();
-            System.out.println("Which car will like to choose?");
+            System.out.println("Which car will like to choose? \nA: Audi\nB: Civic\nC: Cultus");
             String carName = scanner.nextLine();
 
             //Time Check Function (Check according to the car group whether it's feasible for that car or not)
@@ -94,9 +90,10 @@ public class App {
         // It will also update the status of the branch
         // It will also update the status of the branch group
         // It will also update the status
-
+        
         System.out.println("Record Recieving Status Entered");
 
+        Res.setCarStatus(false);
         
 
     }
@@ -106,12 +103,23 @@ public class App {
         //Reservation reservation = new Reservation(123, 456, "2023-07-13 10:00", "2023-07-14 10:00", 1233.44);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Car Rental System!");
+
+        Car mainCar = new Car(2022, 2022, true, "2021-07-13 10:00", false);
+        
+        System.out.println("Enter the price of the car: Rs. ");
+        double price = scanner.nextDouble();
+        mainCar.setFeeStructure(price);
+
+        System.out.println("Enter the tax of the car: Rs. ");
+        double tax = scanner.nextDouble();
+        mainCar.setTaxDetails(tax);
+
         //Write 1sr Part Here
 
 
         //2nd Part (Add New Reservation) starts from here --- Saleh's part
         System.out.println("Input Customer ID: ");
-        String customerId = scanner.nextLine();
+        int customerID = scanner.nextInt();
 
         //File Handling part of Customer_Search_Function!
 
