@@ -2,16 +2,16 @@ public class Reservation {
     private int customerId;
     private int reservationId;
     //Enable the following when a class/Interface named "Car" is made
-    /*private Car carGroup;*/
+    private Car car;
     private String startTime;
     private String endTime;
     private double feeStructure;
 
     // Constructor
-    public Reservation(int customerId, int reservationId, /*Car carGroup*/ String startTime, String endTime, double feeStructure) {
+    public Reservation(int customerId, int reservationId, Car car, String startTime, String endTime, double feeStructure) {
         this.customerId = customerId;
         this.reservationId = reservationId;
-        //this.carGroup = carGroup;
+        this.car = car;
 
         this.startTime = startTime;
         this.endTime = endTime;
@@ -65,5 +65,9 @@ public class Reservation {
 
     public void setFeeStructure(double feeStructure) {
         this.feeStructure = feeStructure;
+    }
+
+    public void setCarStatus(boolean carStatus) {
+        car.setCarStatus(carStatus);
     }
 }
